@@ -3,7 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chamara Madhushanka | Portfolio</title>
+    <!-- SEO Meta Tags -->
+    <title>C.M. Sandanayaka | Software Developer & Media Specialist</title>
+    <meta name="description" content="Portfolio of C.M. Sandanayaka - BICT Undergraduate at USJ, Software Developer, and Creative Media Specialist.">
+    <meta property="og:title" content="C.M. Sandanayaka | Portfolio">
+    <meta property="og:description" content="Software Development, Web Engineering, and Creative Visual Media.">
+    <meta property="og:image" content="profile.jpg">
+
     <link rel="stylesheet" href="style.css">
     <!-- Font Awesome icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -17,7 +23,9 @@
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
                 <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -26,15 +34,23 @@
 
     <!-- Home Section -->
     <section id="home" class="hero">
-        <div class="hero-content">
-            <h3>Hello, I'm</h3>
-            <h1>C.M. Sandanayaka</h1>
-            <p>BICT Undergraduate | Software Developer & Creative Media Enthusiast</p>
-            
-            <!-- Action Buttons -->
-            <div class="hero-btns">
-                <a href="#projects" class="btn">View My Work</a>
-                <a href="cv.pdf" download class="btn btn-outline">Download CV</a>
+        <div class="hero-container">
+            <div class="hero-content">
+                <span class="greeting">Hello, I'm</span>
+                <h1 class="gradient-text">C.M. Sandanayaka</h1>
+                <h2>I'm a <span class="typing-text"></span><span class="cursor">&nbsp;</span></h2>
+                <p>Passionate about building functional software, web solutions, and engaging digital media content.</p>
+                
+                <div class="hero-btns">
+                    <a href="#projects" class="btn btn-primary"><i class="fa-solid fa-briefcase"></i> View My Work</a>
+                    <a href="cv.pdf" download class="btn btn-outline"><i class="fa-solid fa-download"></i> Download CV</a>
+                </div>
+            </div>
+
+            <div class="hero-img">
+                <div class="img-box">
+                    <img src="profile.jpg" alt="C.M. Sandanayaka" class="profile-photo">
+                </div>
             </div>
         </div>
     </section>
@@ -49,16 +65,77 @@
         </div>
     </section>
 
+    <!-- Services / What I Do Section -->
+    <section id="services" class="services">
+        <h2>What I Do</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fa-solid fa-laptop-code service-icon"></i>
+                <h3>Web & Software Development</h3>
+                <p>Building responsive web applications and console applications using HTML, CSS, JavaScript, C, and Java.</p>
+            </div>
+            <div class="service-card">
+                <i class="fa-solid fa-database service-icon"></i>
+                <h3>Database Management</h3>
+                <p>Designing, structuring, and managing relational databases with efficient SQL queries and data models.</p>
+            </div>
+            <div class="service-card">
+                <i class="fa-solid fa-video service-icon"></i>
+                <h3>Media & Content Creation</h3>
+                <p>Editing promotional video ads, short-form reels with custom color grading, sound design, and branding graphics.</p>
+            </div>
+        </div>
+    </section>
+
     <!-- Skills Section -->
     <section id="skills" class="skills">
         <h2>My Skills</h2>
-        <div class="skills-grid">
-            <div class="skill-card"><i class="fa-brands fa-c"></i> C / Java</div>
-            <div class="skill-card"><i class="fa-brands fa-html5"></i> Web Tech (HTML, CSS, JS)</div>
-            <div class="skill-card"><i class="fa-solid fa-database"></i> SQL / Databases</div>
-            <div class="skill-card"><i class="fa-brands fa-git-alt"></i> Git & GitHub</div>
-            <div class="skill-card"><i class="fa-brands fa-linux"></i> Linux / Ubuntu</div>
-            <div class="skill-card"><i class="fa-solid fa-video"></i> Video & Graphic Design</div>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3><i class="fa-solid fa-laptop-code"></i> Software Development & Logic</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag"><i class="fa-solid fa-c"></i> C Programming</span>
+                    <span class="skill-tag"><i class="fa-brands fa-java"></i> Java Fundamentals</span>
+                    <span class="skill-tag"><i class="fa-solid fa-diagram-project"></i> OOP & Data Structures</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3><i class="fa-solid fa-network-wired"></i> Web & Database Engineering</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag"><i class="fa-brands fa-html5"></i> HTML5</span>
+                    <span class="skill-tag"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+                    <span class="skill-tag"><i class="fa-brands fa-js"></i> JavaScript</span>
+                    <span class="skill-tag"><i class="fa-solid fa-database"></i> SQL Databases</span>
+                    <span class="skill-tag"><i class="fa-brands fa-git-alt"></i> Git & GitHub</span>
+                    <span class="skill-tag"><i class="fa-brands fa-ubuntu"></i> Ubuntu / Linux</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3><i class="fa-solid fa-photo-film"></i> Creative Media & Branding</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag"><i class="fa-solid fa-clapperboard"></i> Video Editing (CapCut)</span>
+                    <span class="skill-tag"><i class="fa-solid fa-sliders"></i> Color Grading & Audio</span>
+                    <span class="skill-tag"><i class="fa-solid fa-pen-nib"></i> Graphic & Visual Design</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Timeline Section -->
+    <section id="education" class="education">
+        <h2>Education</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Bachelor of Information & Communication Technology (BICT)</h3>
+                    <p class="institution">Faculty of Technology, University of Sri Jayewardenepura</p>
+                    <span class="duration">Undergraduate (1st Year)</span>
+                    <p>Focusing on Software Engineering, Database Systems, Computer Architecture, and Physics/Mathematics.</p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -66,21 +143,18 @@
     <section id="projects" class="projects">
         <h2>My Projects</h2>
         <div class="projects-grid">
-            <!-- Project 1: Weligama Stays Web Site -->
             <div class="project-card">
                 <h3>Weligama Stays - Accommodation Web App</h3>
                 <p>A modern responsive web application built for local accommodation discovery and booking in Weligama, featuring an interactive user interface and seamless navigation.</p>
                 <a href="https://weligama-stays.vercel.app/" target="_blank" class="project-link">Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
             </div>
 
-            <!-- Project 2: Social Media Management & Video Production -->
             <div class="project-card">
                 <h3>Social Media Management & Video Production</h3>
                 <p>Managed client social media page, produced promotional video ads, short-form reels with custom color grading, audio sound effects, and brand identity graphics.</p>
                 <a href="https://www.facebook.com/share/1BquvGJHr8/?mibextid=wwXIfr" target="_blank" class="project-link">Watch on Facebook <i class="fa-brands fa-facebook"></i></a>
             </div>
 
-            <!-- Project 3: C Programming Coursework & Assignments -->
             <div class="project-card">
                 <h3>C Programming Lab Assignments & Codes</h3>
                 <p>A collection of practical C programming assignments and code snippets covering core concepts like functions, pointers, and file operations.</p>
@@ -93,12 +167,26 @@
     <section id="contact" class="contact">
         <h2>Contact Me</h2>
         <p>Feel free to reach out for collaborations or project inquiries!</p>
-        <div class="social-links">
-            <a href="https://github.com/chamara-madhushanka" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
-            <a href="https://www.linkedin.com/in/chamara-madhushanka-19a624412/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
-            <a href="mailto:16chamara@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a>
+        
+        <div class="contact-container">
+            <form action="https://formspree.io/f/myegnazz" method="POST" class="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="text" name="subject" placeholder="Subject" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+            </form>
+
+            <div class="social-links">
+                <a href="https://github.com/chamara-madhushanka" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                <a href="https://www.linkedin.com/in/chamara-madhushanka-19a624412/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                <a href="mailto:16chamara@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a>
+            </div>
         </div>
     </section>
+
+    <!-- Scroll To Top Button -->
+    <button id="scrollTopBtn"><i class="fa-solid fa-arrow-up"></i></button>
 
     <footer>
         <p>© 2026 Built with ❤️</p>
@@ -106,4 +194,4 @@
 
     <script src="script.js"></script>
 </body>
-</html>~
+</html>
